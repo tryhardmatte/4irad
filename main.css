@@ -1,0 +1,57 @@
+body {
+	text-align: center;
+}
+
+#fyraIRad {
+	background-color: blue;
+	display: inline-block;
+}
+
+#scoreP1 {
+	margin-right: 40px;
+}
+
+.col {
+	width: 80px;
+	height: 80px;
+	/*Gör så att våra col inte samlas imitten */
+	display: inline-block;
+	/* Skapar en spel form som ser ut som 4 i rad med alla cirklar */
+	background-color: white;
+	/*Gör så att det blir cirklar*/
+	border-radius: 50%;
+	/* Behövs för att fylla ut alla cirklar så att det inte finns vissa tomma mellanrum mellan dom*/
+	margin:5px;
+}
+
+.hover-player-1 {
+	background-color: rgba(255,0,0,0.4);
+}
+.hover-player-2 {
+	background-color: rgba(0,0,0,0.5);
+}
+.col.player-1 {
+	background-color: red;
+}
+.col.player-2 {
+	background-color: yellow;
+}
+/*När man har sin mus på en tom cell så kommer musen bli en pointer*/
+.col.tom {
+	cursor: crosshair;
+}
+#startaOm {
+	margin-top: 5px;
+}
+
+img{ 
+    transform-origin:50% 50%;
+    animation:2s rotateRight infinite linear; 
+    background-color:transparent;
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes rotateRight{
+    100%{ transform:rotate(360deg); }
+}
