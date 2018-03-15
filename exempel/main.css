@@ -1,0 +1,21 @@
+body {
+	text-align: center;
+}
+
+#connect4 {
+	background-color: blue;
+	display: inline-block;
+}
+
+.col {
+	width: 80px;
+	height: 80px;
+	/*Gör så att våra col inte samlas imitten */
+	display: inline-block;
+	/* Skapar en spel form som ser ut som 4 i rad med alla cirklar */
+	background-color: white;
+	/*Gör så att det blir cirklar*/
+	border-radius: 50%;
+	/* Behövs för att fylla ut alla cirklar så att det inte finns vissa tomma mellanrum mellan dom*/
+	margin:5px;
+}
